@@ -57,6 +57,13 @@ export const jobs = [
   },
   {
     "track": "consult",
+    "title": "Expert Consultant (Under IFAD Project on Improved Seeds for Farmers Program)",
+    "organization": "Sana Kisan Bikas Bank Limited",
+    "dates": "2015 – 2016",
+    "description": "Assess stakeholder needs, define software modules, evaluate technical and financial feasibility, and prepare requirements analysis and procurement specifications."
+  },
+  {
+    "track": "consult",
     "title": "MIS Specialist (ADB National Consultant)",
     "organization": "Sana Kisan Bikas Bank",
     "dates": "2011 – 2013",

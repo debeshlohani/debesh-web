@@ -18,7 +18,11 @@ export function Hero() {
 <h1>Debesh Prasad <span>Lohani</span></h1>
 <div className="role"><TypedRole /></div>
 <p className="lead">Results-driven banking leader with 31+ years of progressive experience in IT leadership, digital transformation and operations management. Former Deputy Chief Executive Officer of Rastriya Banijya Bank, with a proven record in large-scale automation, enterprise security (ISO 27001:2022) and digital banking.</p>
-<div className="btns"><a className="btn p" href="#career">Explore Career</a><a className="btn s" href="#contact">Get in Touch</a></div>
+<div className="btns">
+  <a className="btn p" href="#career">Explore Career</a>
+  <a className="btn p" href="#contact">Get in Touch</a>
+  <a className="btn p" href="http://debeshsblog.blogspot.com" target="_blank" rel="noopener">Read the Blog</a>
+</div>
 </div>
 <div className="card pf"><img className="ph" alt="Portrait of Debesh Prasad Lohani" src="/portrait.jpg" />
 <ul>
