@@ -1,4 +1,4 @@
-import content from '../../content.json';
+import { useContent } from '../content';
 import { AnimatedStat, CareerTimeline, Publications, ThemeToggle, TypedRole } from './Interactive';
 
 function SectionHeading({ eyebrow, title, description }) {
@@ -21,6 +21,7 @@ function Chips({ items }) {
 }
 
 export function Header() {
+  const content = useContent();
   const { navigation } = content;
   return <header><nav>
     <a className="logo" href="#top">{navigation.brand}</a>
@@ -30,6 +31,7 @@ export function Header() {
 }
 
 export function Hero() {
+  const content = useContent();
   const { hero } = content;
   return <div className="hero" id="top"><div className="wrap grid">
     <div>
@@ -49,6 +51,7 @@ export function Hero() {
 }
 
 export function Stats() {
+  const content = useContent();
   return <div className="stats"><div className="wrap">
     {content.stats.map((stat) => <div className="stat" key={stat.label}>
       <AnimatedStat value={stat.value} suffix={stat.suffix} /><div className="t">{stat.label}</div>
@@ -57,6 +60,7 @@ export function Stats() {
 }
 
 export function About() {
+  const content = useContent();
   const { about } = content;
   return <section id="about"><div className="wrap two">
     <div className="reveal">
@@ -76,6 +80,7 @@ export function About() {
 }
 
 export function Career() {
+  const content = useContent();
   return <section id="career" style={{ background: 'var(--surf)' }}><div className="wrap">
     <SectionHeading {...content.career} />
     <CareerTimeline />
@@ -83,6 +88,7 @@ export function Career() {
 }
 
 export function Expertise() {
+  const content = useContent();
   const { expertise } = content;
   return <section id="expertise"><div className="wrap">
     <SectionHeading {...expertise} />
@@ -93,6 +99,7 @@ export function Expertise() {
 }
 
 export function Recognition() {
+  const content = useContent();
   const { recognition } = content;
   return <section className="dark-sec"><div className="wrap">
     <div className="reveal">
@@ -106,6 +113,7 @@ export function Recognition() {
 }
 
 export function Credentials() {
+  const content = useContent();
   const { credentials } = content;
   return <section id="creds"><div className="wrap">
     <SectionHeading {...credentials} />
@@ -120,6 +128,7 @@ export function Credentials() {
 }
 
 export function Writing() {
+  const content = useContent();
   const { writing } = content;
   return <section id="writing" style={{ background: 'var(--surf)' }}>
     <div className="wrap two" style={{ gridTemplateColumns: '1.4fr 1fr' }}>
@@ -142,6 +151,7 @@ export function Writing() {
 }
 
 export function Contact() {
+  const content = useContent();
   const { contact } = content;
   return <section id="contact"><div className="wrap reveal" style={{ textAlign: 'center', maxWidth: '680px' }}>
     <span className="eyebrow">{contact.eyebrow}</span><h2>{contact.title}</h2>
@@ -155,6 +165,7 @@ export function Contact() {
 }
 
 export function Footer() {
+  const content = useContent();
   return <footer><div className="wrap" style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '10px', fontSize: '14px' }}>
     <span>© {new Date().getFullYear()} {content.footer.copyright}</span>
     <a href="#top">{content.footer.backToTopLabel}</a>

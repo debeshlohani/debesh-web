@@ -32,6 +32,18 @@ npm run check:content
 
 Content changes refresh the local development page. Rebuild and redeploy to update the published website. Invalid content stops the build with an error that identifies the field to fix.
 
+## Standalone collaborator preview
+
+Share `collaborator-preview.html` and `content.json` with collaborators. They can open the HTML directly, edit the JSON in a text editor, then select it using **Choose content.json**. No Node.js or server is needed for this workflow. The HTML includes the app, styles and standard portrait, with offline font fallbacks.
+
+`npm run build` regenerates the standalone preview as well as the production site. To regenerate only the HTML after layout/style changes, run:
+
+```sh
+npm run build:preview
+```
+
+Commit the generated HTML when updating its layout so collaborators receive the latest preview. Text-only edits can be loaded directly into the existing HTML. The standalone file is a local preview; publishing the website still requires rebuilding and redeploying `dist/`.
+
 ## Project files
 
 - `content.json`: the single source of editable website content.

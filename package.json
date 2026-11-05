@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node scripts/build-preview.mjs",
     "preview": "vite preview",
-    "check:content": "node scripts/check-content.mjs"
+    "check:content": "node scripts/check-content.mjs",
+    "build:preview": "node scripts/build-preview.mjs"
   },
   "engines": {
     "node": "^20.19.0 || >=22.12.0"

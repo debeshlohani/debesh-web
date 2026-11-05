@@ -1,11 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
-import content from '../../content.json';
-
-const roles = content.hero.roles;
-const { jobs, tracks } = content.career;
-const { publications } = content.writing;
+import { useContent } from '../content';
 
 export function ThemeToggle() {
+  const content = useContent();
   function toggleTheme() {
     const root = document.documentElement;
     const current = root.dataset.theme || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
@@ -15,6 +12,7 @@ export function ThemeToggle() {
 }
 
 export function TypedRole() {
+  const roles = useContent().hero.roles;
   const [text, setText] = useState(roles[0]);
   useEffect(() => {
     const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
@@ -45,7 +43,7 @@ export function TypedRole() {
     start();
     motion.addEventListener('change', start);
     return () => { clearTimeout(timer); motion.removeEventListener('change', start); };
-  }, []);
+  }, [roles]);
   return <><b aria-hidden="true">{text}</b><span className="sr-only">{roles.join(', ')}</span></>;
 }
 
@@ -73,6 +71,8 @@ export function AnimatedStat({ value, suffix = '' }) {
 }
 
 export function CareerTimeline() {
+  const content = useContent();
+  const { jobs, tracks } = content.career;
   const [track, setTrack] = useState('all');
   const visibleJobs = jobs.filter((job) => track === 'all' || job.track === track);
   return <>
@@ -88,6 +88,8 @@ export function CareerTimeline() {
 }
 
 export function Publications() {
+  const content = useContent();
+  const { publications } = content.writing;
   const [query, setQuery] = useState('');
   const normalizedQuery = query.trim().toLowerCase();
   const visiblePublications = publications.filter((publication) => `${publication.year} ${publication.title} ${publication.publisher}`.toLowerCase().includes(normalizedQuery));
