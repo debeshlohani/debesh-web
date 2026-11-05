@@ -1,8 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
-import { jobs, publications } from '../data';
+import content from '../../content.json';
 
-const roles = ['Senior Banking Executive', 'Digital Transformation Leader', 'ISO 27001 Lead Auditor', 'Educator & Author'];
-const tracks = [['all', 'All'], ['bank', 'Banking'], ['consult', 'Consulting'], ['acad', 'Academia']];
+const roles = content.hero.roles;
+const { jobs, tracks } = content.career;
+const { publications } = content.writing;
 
 export function ThemeToggle() {
   function toggleTheme() {
@@ -10,7 +11,7 @@ export function ThemeToggle() {
     const current = root.dataset.theme || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
     root.dataset.theme = current === 'dark' ? 'light' : 'dark';
   }
-  return <button type="button" onClick={toggleTheme} aria-label="Toggle theme">◐ Theme</button>;
+  return <button type="button" onClick={toggleTheme} aria-label={content.navigation.themeAccessibleLabel}>{content.navigation.themeLabel}</button>;
 }
 
 export function TypedRole() {
@@ -48,7 +49,7 @@ export function TypedRole() {
   return <><b aria-hidden="true">{text}</b><span className="sr-only">{roles.join(', ')}</span></>;
 }
 
-export function AnimatedStat({ value }) {
+export function AnimatedStat({ value, suffix = '' }) {
   const element = useRef(null);
   const [count, setCount] = useState(value);
   useEffect(() => {
@@ -68,15 +69,15 @@ export function AnimatedStat({ value }) {
     observer.observe(element.current);
     return () => { observer.disconnect(); cancelAnimationFrame(frame); };
   }, [value]);
-  return <div className="n" ref={element}><span aria-hidden="true">{count}+</span><span className="sr-only">{value}+</span></div>;
+  return <div className="n" ref={element}><span aria-hidden="true">{count}{suffix}</span><span className="sr-only">{value}{suffix}</span></div>;
 }
 
 export function CareerTimeline() {
   const [track, setTrack] = useState('all');
   const visibleJobs = jobs.filter((job) => track === 'all' || job.track === track);
   return <>
-    <div className="tabs" role="group" aria-label="Filter career by track">
-      {tracks.map(([value, label]) => <button key={value} type="button" className={`tab${track === value ? ' on' : ''}`} aria-pressed={track === value} aria-controls="career-timeline" onClick={() => setTrack(value)}>{label}</button>)}
+    <div className="tabs" role="group" aria-label={content.career.filterLabel}>
+      {tracks.map(({ id: value, label }) => <button key={value} type="button" className={`tab${track === value ? ' on' : ''}`} aria-pressed={track === value} aria-controls="career-timeline" onClick={() => setTrack(value)}>{label}</button>)}
     </div>
     <div className="tl" id="career-timeline" aria-live="polite">
       {visibleJobs.map((job) => <article className="job" key={`${job.organization}-${job.title}`}>
@@ -91,11 +92,11 @@ export function Publications() {
   const normalizedQuery = query.trim().toLowerCase();
   const visiblePublications = publications.filter((publication) => `${publication.year} ${publication.title} ${publication.publisher}`.toLowerCase().includes(normalizedQuery));
   return <>
-    <input type="search" className="search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search articles (e.g. cyber, KYC, digital)…" aria-label="Search publications" aria-controls="publications" />
+    <input type="search" className="search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder={content.writing.searchPlaceholder} aria-label={content.writing.searchLabel} aria-controls="publications" />
     <div id="publications" aria-live="polite">
       {visiblePublications.length ? visiblePublications.map((publication) => <div className="pub" key={`${publication.year}-${publication.title}`}>
         <span className="y">{publication.year}</span><div>{publication.title}<br /><i>{publication.publisher}</i></div>
-      </div>) : <p className="sub">No matches.</p>}
+      </div>) : <p className="sub">{content.writing.noMatches}</p>}
     </div>
   </>;
 }

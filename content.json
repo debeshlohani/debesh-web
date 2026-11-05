@@ -1,0 +1,510 @@
+{
+  "site": {
+    "title": "Debesh Prasad Lohani — Senior Banking Executive",
+    "description": "Debesh Prasad Lohani — senior banking executive, digital transformation leader, educator and author in Kathmandu, Nepal.",
+    "language": "en"
+  },
+  "navigation": {
+    "brand": "Debesh Prasad Lohani",
+    "links": [
+      {
+        "label": "About",
+        "href": "#about"
+      },
+      {
+        "label": "Career",
+        "href": "#career"
+      },
+      {
+        "label": "Expertise",
+        "href": "#expertise"
+      },
+      {
+        "label": "Credentials",
+        "href": "#creds"
+      },
+      {
+        "label": "Writing",
+        "href": "#writing"
+      },
+      {
+        "label": "Contact",
+        "href": "#contact"
+      }
+    ],
+    "themeLabel": "◐ Theme",
+    "themeAccessibleLabel": "Toggle theme"
+  },
+  "hero": {
+    "tagline": "Senior Banking Executive · Kathmandu, Nepal",
+    "name": "Debesh Prasad",
+    "highlightedName": "Lohani",
+    "roles": [
+      "Senior Banking Executive",
+      "Digital Transformation Leader",
+      "ISO 27001 Lead Auditor",
+      "Educator & Author"
+    ],
+    "introduction": "Results-driven banking leader with 31+ years of progressive experience in IT leadership, digital transformation and operations management. Former Deputy Chief Executive Officer of Rastriya Banijya Bank, with a proven record in large-scale automation, enterprise security (ISO 27001:2022) and digital banking.",
+    "buttons": [
+      {
+        "label": "Explore Career",
+        "href": "#career"
+      },
+      {
+        "label": "Get in Touch",
+        "href": "#contact"
+      },
+      {
+        "label": "Read the Blog",
+        "href": "http://debeshsblog.blogspot.com",
+        "newTab": true
+      }
+    ],
+    "portrait": {
+      "src": "/portrait.jpg",
+      "alt": "Portrait of Debesh Prasad Lohani"
+    },
+    "profile": [
+      {
+        "label": "Latest role",
+        "value": "Freelance Consultant, Trainer, Educator"
+      },
+      {
+        "label": "Worked as",
+        "value": "Computer Programmer - DCEO (Banking)"
+      },
+      {
+        "label": "Certified",
+        "value": "ISO 27001 Lead Auditor, ITIL, COBIT, CEH"
+      },
+      {
+        "label": "Recognised",
+        "value": "Outstanding Employee 2024 (RBB)"
+      },
+      {
+        "label": "Teaches",
+        "value": "MIS · Security · eCommerce · Fintech · Digital Transformation · Management"
+      }
+    ]
+  },
+  "stats": [
+    {
+      "value": 31,
+      "suffix": "+",
+      "label": "Years in banking & IT"
+    },
+    {
+      "value": 10,
+      "suffix": "+",
+      "label": "Departments overseen"
+    },
+    {
+      "value": 10,
+      "suffix": "+",
+      "label": "Professional certifications"
+    },
+    {
+      "value": 35,
+      "suffix": "+",
+      "label": "Articles published"
+    }
+  ],
+  "about": {
+    "eyebrow": "About",
+    "title": "From coding the core to leading the bank",
+    "paragraphs": [
+      "Debesh began his career in 1994 as a Computer Programmer at Rastriya Banijya Bank, writing and maintaining the bank's core systems. Over three decades he rose through project management, data-centre leadership and Chief of IT to Deputy Executive Officer and, from June 2024 to February 2026, Deputy Chief Executive Officer, oversaw IT, Digital Banking, HR, Compliance, Payment & Settlement, Branch Operations and more. Now, exchanging ideas on IT, IT-security, digital banking, fintech and total digital transformation.",
+      "Alongside banking, he has served as the bank's Chief Information Security Officer and Information Officer, advised national e-governance and microfinance programmes funded by ADB, and has taught MBA, MScIT and BScIT students since 2006."
+    ],
+    "topics": [
+      "ISO 27001:2022",
+      "Digital Transformation",
+      "Business Continuity",
+      "Disaster Recovery",
+      "Cybersecurity",
+      "IT Governance",
+      "AML/CFT Oversight"
+    ],
+    "educationTitle": "Education",
+    "education": [
+      {
+        "year": "2011",
+        "degree": "MBA (Information System)",
+        "institution": "Sikkim Manipal University"
+      },
+      {
+        "year": "2004",
+        "degree": "PG Diploma in IT",
+        "institution": "Sikkim Manipal University"
+      },
+      {
+        "year": "1997",
+        "degree": "MSc (Physics & Electronics)",
+        "institution": "Tribhuvan University"
+      },
+      {
+        "year": "1991",
+        "degree": "BSc (Physics, Chemistry, Maths)",
+        "institution": "Tribhuvan University"
+      }
+    ]
+  },
+  "career": {
+    "eyebrow": "Career",
+    "title": "Three decades of progression",
+    "description": "Filter the timeline by track.",
+    "filterLabel": "Filter career by track",
+    "tracks": [
+      {
+        "id": "all",
+        "label": "All"
+      },
+      {
+        "id": "bank",
+        "label": "Banking"
+      },
+      {
+        "id": "consult",
+        "label": "Consulting"
+      },
+      {
+        "id": "acad",
+        "label": "Academia"
+      }
+    ],
+    "jobs": [
+      {
+        "track": "bank",
+        "title": "Deputy Chief Executive Officer",
+        "organization": "Rastriya Banijya Bank",
+        "dates": "Jun 2024 – Feb 2026",
+        "description": "Supervised 10+ departments including IT, Digital Banking, HR, Compliance, Payment & Settlement, Legal, Branch Operations and Loan Recovery."
+      },
+      {
+        "track": "bank",
+        "title": "Deputy Executive Officer",
+        "organization": "Rastriya Banijya Bank",
+        "dates": "Jul 2019 – Jun 2024",
+        "description": "Oversaw IT, Digital Banking, Compliance, HR, Risk, Marketing and Payments; served as CISO and Information Officer."
+      },
+      {
+        "track": "bank",
+        "title": "Chief of IT Department",
+        "organization": "Rastriya Banijya Bank",
+        "dates": "Aug 2014 – Jul 2019",
+        "description": "Led IT strategy, 40+ servers, data centre, network and security; authored IT, BCP/DR and digital banking policies."
+      },
+      {
+        "track": "bank",
+        "title": "Senior Manager (IT) & Deputy Chief of IT",
+        "organization": "Rastriya Banijya Bank",
+        "dates": "2010 – 2014",
+        "description": "Data-centre in-charge, Information Security Officer, procurement specifications and core banking support."
+      },
+      {
+        "track": "bank",
+        "title": "Deputy Chief Officer (Computer Programmer)",
+        "organization": "Rastriya Banijya Bank",
+        "dates": "2006 – 2010",
+        "description": "Customised core banking software; designed information security, disaster recovery and business continuity plans."
+      },
+      {
+        "track": "bank",
+        "title": "Project Manager, Integrated Banking & Information System",
+        "organization": "Rastriya Banijya Bank",
+        "dates": "2004 – 2006",
+        "description": "Managed IBIS implementation, automation coordination and training."
+      },
+      {
+        "track": "bank",
+        "title": "Computer Programmer",
+        "organization": "Rastriya Banijya Bank",
+        "dates": "1994 – 2004",
+        "description": "Where it began: system design, coding, debugging and staff training."
+      },
+      {
+        "track": "consult",
+        "title": "Consultant, EMIS (Exam) System",
+        "organization": "Tribhuvan University",
+        "dates": "2021 – 2022",
+        "description": "Specified exam management system and hardware; prepared bidding documents."
+      },
+      {
+        "track": "consult",
+        "title": "Expert Consultant (Under IFAD Project on Improved Seeds for Farmers Program)",
+        "organization": "Sana Kisan Bikas Bank Limited",
+        "dates": "2015 – 2016",
+        "description": "Assess stakeholder needs, define software modules, evaluate technical and financial feasibility, and prepare requirements analysis and procurement specifications."
+      },
+      {
+        "track": "consult",
+        "title": "MIS Specialist (ADB National Consultant)",
+        "organization": "Sana Kisan Bikas Bank",
+        "dates": "2011 – 2013",
+        "description": "Designed MIS strategy for the bank and partner cooperatives under an ADB programme."
+      },
+      {
+        "track": "consult",
+        "title": "System Integration Specialist (ADB National Consultant)",
+        "organization": "SPI Nepal – ICT Development Project",
+        "dates": "2010 – 2011",
+        "description": "Enterprise architecture and e-governance for national ID, land records, vehicle registration and public service recruitment."
+      },
+      {
+        "track": "acad",
+        "title": "Lecturer (Part-time)",
+        "organization": "College of Professional Studies (LBEF)",
+        "dates": "2006 – Present",
+        "description": "MIS, eCommerce and System Security for MBA, MScIT, BScIT and BBA programmes."
+      },
+      {
+        "track": "acad",
+        "title": "Lecturer (Part-time)",
+        "organization": "Nepal Open University",
+        "dates": "2018 – 2021",
+        "description": "Digital Economy, Master in eGovernance."
+      },
+      {
+        "track": "acad",
+        "title": "Lecturer (Part-time)",
+        "organization": "Jana Maitri Multiple Campus",
+        "dates": "2013 – Present",
+        "description": "MIS, Cyber Law and Network Security."
+      }
+    ]
+  },
+  "expertise": {
+    "eyebrow": "Leadership scope",
+    "title": "Areas of oversight & expertise",
+    "description": "As Deputy CEO, supervising and advising across the bank's most critical functions.",
+    "items": [
+      {
+        "icon": "💻",
+        "title": "IT & Digital Banking",
+        "description": "IT strategy, ICT architecture, digital products and service offerings."
+      },
+      {
+        "icon": "🛡️",
+        "title": "Security & Risk",
+        "description": "CISO role, information security policy, risk management advisory."
+      },
+      {
+        "icon": "⚖️",
+        "title": "Compliance & Legal",
+        "description": "AML/CFT, NRB directives, FATF alignment and legal affairs."
+      },
+      {
+        "icon": "💳",
+        "title": "Payments & Settlement",
+        "description": "Digital payments, RTGS, IPS, SWIFT, remittance and card transactions."
+      },
+      {
+        "icon": "🏦",
+        "title": "Branch Operations",
+        "description": "Policies and coordination across central, province and branch offices."
+      },
+      {
+        "icon": "👥",
+        "title": "People & Services",
+        "description": "HR, learning & development, general services and asset management."
+      }
+    ]
+  },
+  "recognition": {
+    "eyebrow": "Recognition",
+    "title": "Awards & honours",
+    "awards": [
+      {
+        "year": "2024",
+        "description": "Outstanding Employee of the Year, Rastriya Banijya Bank"
+      },
+      {
+        "year": "2009",
+        "description": "Best Employee of the Year, Rastriya Banijya Bank"
+      },
+      {
+        "year": "2008",
+        "description": "International Who's Who of Professionals; First place"
+      },
+      {
+        "year": "2008",
+        "description": "First place, Information and Network Security, CDAC India"
+      },
+      {
+        "year": "2008",
+        "description": "ITEC Scholarship, 2008"
+      },
+      {
+        "year": "1998",
+        "description": "Colombo Plan Scholarship"
+      }
+    ]
+  },
+  "credentials": {
+    "eyebrow": "Credentials",
+    "title": "Certifications",
+    "description": "Internationally recognised credentials in audit, security, governance and infrastructure.",
+    "certifications": [
+      {
+        "title": "ISO 27001 Lead Auditor",
+        "description": "IRCA, London · 2013 & 2022 standards"
+      },
+      {
+        "title": "CEH",
+        "description": "Certified Ethical Hacker, EC-Council"
+      },
+      {
+        "title": "COBIT 5",
+        "description": "Foundation, ISACA"
+      },
+      {
+        "title": "ITIL Foundation",
+        "description": "Service Management, PEOPLECERT"
+      },
+      {
+        "title": "MCSE · MCT · MCTS",
+        "description": "Microsoft certifications"
+      },
+      {
+        "title": "BCP & DRP",
+        "description": "West Bengal University of Technology"
+      }
+    ],
+    "membershipsTitle": "Professional memberships",
+    "memberships": [
+      "Life Member, Federation of Computer Association of Nepal",
+      "Life Member, Management Association of Nepal",
+      "ISACA",
+      "Internet Society Nepal (Life)",
+      "Computer Association of Nepal",
+      "Lions Club Kathmandu Eureka",
+      "Nepal Red Cross (Life)"
+    ],
+    "boardsTitle": "Board representation (Former)",
+    "boards": [
+      "Chairperson, RBB Securities Company Limited",
+      "Director, Nepal Stock Exchange Limited",
+      "Director, Nepal Digital Payment Company Limited",
+      "Director, United Insurance Company Limited"
+    ]
+  },
+  "writing": {
+    "eyebrow": "Thought leadership",
+    "title": "Selected publications",
+    "description": "Search writing on cybersecurity, digital banking and risk.",
+    "searchPlaceholder": "Search articles (e.g. cyber, KYC, digital)…",
+    "searchLabel": "Search publications",
+    "noMatches": "No matches.",
+    "publications": [
+      {
+        "year": "2026",
+        "title": "Cyber Security in Digital Banking: Evaluating Risk Management Practices and Mitigation Strategies",
+        "publisher": "Upahar"
+      },
+      {
+        "year": "2025",
+        "title": "Campaign against money laundering in banking (Nepali)",
+        "publisher": "Lakshya Yatra"
+      },
+      {
+        "year": "2025",
+        "title": "Influence of Trade Unions in the Nepalese Banking Sector",
+        "publisher": "Manobhav"
+      },
+      {
+        "year": "2025",
+        "title": "Navigating the Cybersecurity Landscape of Digital Banking",
+        "publisher": "Upahar"
+      },
+      {
+        "year": "2024",
+        "title": "Digitization, Digitalization and Digital Transformation in Banking Operation",
+        "publisher": "Upahar"
+      },
+      {
+        "year": "2023",
+        "title": "Cybersecurity and Banking",
+        "publisher": "Manobhav"
+      },
+      {
+        "year": "2023",
+        "title": "Digital Currencies at a Glance",
+        "publisher": "Upahar"
+      },
+      {
+        "year": "2022",
+        "title": "KYC and Identity Theft",
+        "publisher": "Upahar"
+      },
+      {
+        "year": "2021",
+        "title": "Digital Nepal Framework and Electronic Transaction Act 2008",
+        "publisher": "NEON Magazine"
+      },
+      {
+        "year": "2021",
+        "title": "Coronavirus, Digital Banking and Security",
+        "publisher": "Upahar"
+      },
+      {
+        "year": "2018",
+        "title": "IT Risks, Control and Cybersecurity",
+        "publisher": "Upahar"
+      },
+      {
+        "year": "2015",
+        "title": "IT Risk Management in Banking Sector",
+        "publisher": "CONEP Magazine"
+      },
+      {
+        "year": "2013",
+        "title": "High-Tech Security in E-Banking",
+        "publisher": "Global Conference on Human Development"
+      }
+    ],
+    "talksTitle": "Conferences & talks",
+    "talks": [
+      {
+        "year": "2025",
+        "title": "Digital Banking & Risk Mitigation for Happiness",
+        "venue": "IMIS, Bhubaneswar, India"
+      },
+      {
+        "year": "2018",
+        "title": "Fraud Risk Assessment",
+        "venue": "Nepal Management Council"
+      },
+      {
+        "year": "2018",
+        "title": "Cyber Threat & SOC in Nepalese Context",
+        "venue": "APORS Triennial Conference"
+      },
+      {
+        "year": "2017",
+        "title": "A Glance to Cyber Threat in Nepal",
+        "venue": "ORSN National Conference"
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Let's connect",
+    "description": "Open to advisory, speaking, board and consulting conversations in banking technology, cybersecurity and digital transformation.",
+    "buttons": [
+      {
+        "label": "✉ debesh@msn.com",
+        "href": "mailto:debesh@msn.com"
+      },
+      {
+        "label": "Read the Blog",
+        "href": "http://debeshsblog.blogspot.com",
+        "newTab": true
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "Debesh Prasad Lohani · Kathmandu, Nepal",
+    "backToTopLabel": "Back to top ↑"
+  }
+}
