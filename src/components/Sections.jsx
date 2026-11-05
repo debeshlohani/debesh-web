@@ -1,6 +1,12 @@
 import { useContent } from '../content';
 import { AnimatedStat, CareerTimeline, Publications, ThemeToggle, TypedRole } from './Interactive';
 
+function publicAssetUrl(path) {
+  return path.startsWith('/') && !path.startsWith('//')
+    ? `${import.meta.env.BASE_URL}${path.slice(1)}`
+    : path;
+}
+
 function SectionHeading({ eyebrow, title, description }) {
   return <div className="section-intro reveal">
     <span className="eyebrow">{eyebrow}</span>
@@ -44,7 +50,7 @@ export function Hero() {
       </div>
     </div>
     <div className="card pf">
-      <img className="ph" src={hero.portrait.src} alt={hero.portrait.alt} />
+      <img className="ph" src={publicAssetUrl(hero.portrait.src)} alt={hero.portrait.alt} />
       <ul>{hero.profile.map((item) => <li key={item.label}><b>{item.label}</b>{item.value}</li>)}</ul>
     </div>
   </div></div>;
