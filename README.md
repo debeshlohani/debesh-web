@@ -28,7 +28,7 @@ The workflow in `.github/workflows/deploy.yml` builds and publishes the website 
 
 In the repository's **Settings → Pages**, use **GitHub Actions** as the publishing source. The workflow reads the Pages URL to set asset paths automatically, including the portrait. The repository's default Pages URL is:
 
-https://munishlohani.github.io/debesh-web/
+https://debeshlohani.github.io/debesh-web/
 
 Collaborators can edit `content.json` directly on GitHub and commit their changes. The workflow validates the content before publishing; a failed build leaves the last successful deployment in place. No local Node.js installation is required to update text this way.
 
